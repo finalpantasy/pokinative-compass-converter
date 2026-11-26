@@ -1,6 +1,6 @@
 # Compass Converter for PokiNative 1.0.0
 
-This release turns your own download of Pokémon Compass for Violet into a PokiNative mod pack. Start it with `--mod compass`. The release contains no Compass files or code. The converter runs PokiNative's own mod tools on the copy you downloaded.
+This release turns your own download of Pokémon Compass for Violet into a [PokiNative](https://github.com/privacymatters42069-del/PokiNative) mod pack. Start it with `--mod compass`. The release contains no Compass files or code. The converter runs PokiNative's own mod tools on the copy you downloaded.
 
 ## What it does
 

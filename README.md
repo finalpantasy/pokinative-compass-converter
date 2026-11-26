@@ -1,6 +1,6 @@
 # Compass Converter for PokiNative
 
-Play the **Pokémon Compass** fan mod for Pokémon Violet in **PokiNative**, the native PC recompilation of Violet. This tool takes the Compass download you got yourself and sets it up as a PokiNative mod pack on your own PC. You then start the game with `--mod compass`.
+Play the **Pokémon Compass** fan mod for Pokémon Violet in **[PokiNative](https://github.com/privacymatters42069-del/PokiNative)**, the native PC recompilation of Violet. This tool takes the Compass download you got yourself and sets it up as a PokiNative mod pack on your own PC. You then start the game with `--mod compass`.
 
 ![A Compass save loaded in PokiNative with --mod compass (lab run, 4K, scaled down)](docs/screenshots/compass-world.jpg)
 
@@ -8,7 +8,7 @@ This repository contains no part of Compass: no files, no code and nothing decod
 
 ## What you need
 
-- **PokiNative 0.4.6.3 or newer**, built with its launcher from your own Violet game and update 4.0.0. The converter relies on PokiNative's exefs plugin loader, which first shipped in 0.4.6.3.
+- **[PokiNative](https://github.com/privacymatters42069-del/PokiNative) 0.4.6.3 or newer**, built with its launcher from your own Violet game and update 4.0.0. The converter relies on PokiNative's exefs plugin loader, which first shipped in 0.4.6.3.
 - **Pokémon Compass for Violet**, downloaded from [compass.seri.studio](https://compass.seri.studio) and unpacked. Version 2.1.1.1 has been tested. Other versions should convert too (see [Versions](#versions)).
 - About 1 GB free disk space and 10 to 45 minutes. The conversion recompiles the game once (about 10 minutes on a 32-thread PC).
 
