@@ -18,7 +18,7 @@ This release turns your own download of Pokémon Compass for Violet into a PokiN
 
 ## Tested
 
-Lab runs on 2026-11-25, Windows 11, PokiNative upstream `testing` at `ecadc99`, Violet 4.0.0, Compass 2.1.1.1 Violet:
+Lab runs on 2026-11-25 and 2026-11-26, Windows 11, PokiNative upstream `testing` at `ecadc99`, Violet 4.0.0, Compass 2.1.1.1 Violet:
 
 | Check | Result |
 |---|---|
@@ -27,12 +27,13 @@ Lab runs on 2026-11-25, Windows 11, PokiNative upstream `testing` at `ecadc99`, 
 | Clean conversion, starting from a build with no plugin | pass, about 10 minutes: 2032 RomFS files, 6 hooks, 5 of 6 at function starts. The hook table matches a conversion made earlier by hand. |
 | Second run, nothing changed | pass, 8 seconds: overlay kept, hooks cached, build checked |
 | Boot with `--mod compass` on a Compass save | pass: the pack loads with its own `save-compass`, Compass's Lua scripts run without errors, the world loads |
-| Plugin hooks that ran in game | 3 of 6 (the ones that run at start-up and when Lua scripts load) |
+| Plugin hooks that ran in game | 5 of 6: the start-up and Lua hooks, the EXP hook and one battle hook. The food hook did not run (see below). |
 | Save | pass: the game saved to `save-compass` (4.2 MiB commit) |
-| Compass's EXP rate and level cap in battle | **not checked in game**: the lab runs did not reach a battle that gives EXP |
-| Compass's longer food effects | **not checked in game** |
+| Compass's EXP rate in battle | pass: with Exp. Multiplier at 150%, catching a wild Arrokuda gave Quaxly 40 EXP (407 to 447) and Oshawott 21 (314 to 335). The unmodded game gives about 27 and 14. |
+| Compass's level cap | pass: with Level Cap set to Level 1, catching a wild Buizel gave the four party Pokémon 0 EXP. One catch earlier, at Level 100, the three Pokémon then in the party gained 88, 49 and 73. |
+| Compass's longer food effects | **not checked in game**: the lab save is too early in the story for picnics or restaurants |
 
-The hooks for these two are in the rebuilt game and match the earlier conversion. No lab run has executed them yet.
+The food hook is in the rebuilt game and matches the earlier conversion. No lab run has executed it yet.
 
 ## Known limits
 

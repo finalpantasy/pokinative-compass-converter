@@ -71,7 +71,7 @@ Run the converter again after you update Compass or PokiNative.
 
 ## Tested
 
-Release 1.0.0 was tested in automated lab runs. We started with a clean PokiNative build (upstream `testing`, no plugin), converted Compass 2.1.1.1 with this tool, booted with `--mod compass`, loaded a Compass save, reached the world and checked that the game saved to `save-compass`. The [release notes](docs/release-notes-1.0.0.md) list what was checked and what was not.
+Release 1.0.0 was tested in automated lab runs. We started with a clean PokiNative build (upstream `testing`, no plugin), converted Compass 2.1.1.1 with this tool, booted with `--mod compass`, loaded a Compass save, reached the world, checked that the game saved to `save-compass`, and checked Compass's EXP rate and level cap in wild battles. Compass's longer food effects were not checked in game. The [release notes](docs/release-notes-1.0.0.md) list what was checked and what was not.
 
 ## License
 
